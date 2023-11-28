@@ -1,5 +1,6 @@
 body {
   background-color: #424242;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .headercontainer {
@@ -17,6 +18,7 @@ body {
 
 .content-container {
   background-color: #646464;
+  color: #ffffff;
   background-position: center center;
   object-fit: cover;
   border-radius: 5px;
@@ -39,8 +41,13 @@ body {
 .left {
   width: 15%;
   background-color: #646464;
-  height: cover;
+  height: 600px;
   color: #ffffff;
+}
+
+.category-links {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .right {
