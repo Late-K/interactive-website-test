@@ -1,91 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Interactive-Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="mainStyle.css" />
+    <div id="header">
+      <title>Interactive-Website</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="mainStyle.css" />
+
+      <div class="logo">
+        <h2>Entertainment Portal</h2>
+        <input type="text" placeholder="Search all..." />
+      </div>
+
+      <div class="header-banner" style="background-color: red; color: red">
+        -
+      </div>
+      <div
+        class="header-banner"
+        style="background-color: orange; color: orange"
+      >
+        -
+      </div>
+      <div
+        class="header-banner"
+        style="background-color: yellow; color: yellow"
+      >
+        -
+      </div>
+
+      <br />
+
+      <div class="label-container">
+        <div style="padding-left: 15px">
+          <span class="span-header"> ALL entertainment ALL the time </span>
+
+          <span class="span-header">
+            <select name="categories" id="categories">
+              <option value="All genres">genre select</option>
+              <option value="horror">horror</option>
+              <option value="comedy">comedy</option>
+              <option value="sci-fi">sci-fi</option>
+              <option value="fantasy">fantasy</option>
+            </select>
+          </span>
+
+          <span class="span-header">
+            <select name="sort" id="sort">
+              <option value="sort by most popular">sort by most popular</option>
+              <option value="sort by newest">sort by newest</option>
+              <option value="sort by oldest">sort by oldest</option>
+            </select>
+          </span>
+        </div>
+      </div>
+    </div>
   </head>
 
   <body>
-    <div class="row">
-      <div class="column left">
-        <h2 class="headercontainer">Entertainment Portal</h2>
-
-        <input type="text" placeholder="Search all..." />
-
-        <a class="category-links" href="/interactive-website-test/index.html"><h2 style="background-color: orange; padding-left: 5px;">All</h2></a>
-        <div style="padding-left: 5px;">
-        <a class="category-links" href="/interactive-website-test/Films.html"><h3 style="padding-top: 10px;">Films</h3></a>
-        <h3 style="padding-top: 10px;">Movies</h2>
-        <h3 style="padding-top: 10px">Games</h2>
-        <h3 style="padding-top: 10px">Albums</h2>
+    <div id="middle">
+      <div id="left">
+        <a class="category-links" href="/interactive-website-test/index.html"
+          ><h2 style="background-color: orange; padding-left: 5px">All</h2></a
+        >
+        <div style="padding-left: 5px">
+          <a class="category-links" href="/interactive-website-test/films.html"
+            ><h3 style="padding-top: 10px">Films</h3></a
+          >
+          <h3 style="padding-top: 10px">Movies</h3>
+          <h3 style="padding-top: 10px">Games</h3>
+          <h3 style="padding-top: 10px">Albums</h3>
         </div>
-
       </div>
 
-      <div class="column right">
-        <div
-          style="
-            background-color: red;
-            margin: 5px;
-            margin-left: 10px;
-            padding: 5px;
-            color: red;
-          "
-        >
-          -
-        </div>
-        <div
-          style="
-            background-color: orange;
-            margin: 5px;
-            margin-left: 10px;
-            padding: 5px;
-            color: orange;
-          "
-        >
-          -
-        </div>
-        <div
-          style="
-            background-color: yellow;
-            margin: 5px;
-            margin-left: 10px;
-            padding: 5px;
-            color: yellow;
-          "
-        >
-          -
-        </div>
-
+      <div id="right">
         <br />
-
-        <div class="label-container" style="margin-left: 10px">
-          <div style="padding-left: 15px">
-            <span class="span-header"> ALL entertainment ALL the time </span>
-
-            <span class="span-header">
-              <select name="categories" id="categories">
-                <option value="All genres">genre select</option>
-                <option value="horror">horror</option>
-                <option value="comedy">comedy</option>
-                <option value="sci-fi">sci-fi</option>
-                <option value="fantasy">fantasy</option>
-              </select>
-            </span>
-
-            <span class="span-header">
-              <select name="sort" id="sort">
-                <option value="sort by most popular">
-                  sort by most popular
-                </option>
-                <option value="sort by newest">sort by newest</option>
-                <option value="sort by oldest">sort by oldest</option>
-              </select>
-            </span>
-
-          </div>
-        </div>
 
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
           <div class="content-container">
@@ -113,4 +100,6 @@
       </div>
     </div>
   </body>
+
+  <div id="footer">footer</div>
 </html>
